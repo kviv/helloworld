@@ -1,0 +1,6 @@
+<%= @product.errors.full_messages.join("<br>") if @product.errors.any? %>
+
+<%= form_for @product do |f| %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
